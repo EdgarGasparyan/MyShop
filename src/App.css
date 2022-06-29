@@ -1,0 +1,10 @@
+/* Nabvar */
+.navbar-nav a{
+	font-size: 18px;
+}
+#basic-addon2{
+	width: 45px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
