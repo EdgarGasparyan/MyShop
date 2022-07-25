@@ -11,6 +11,7 @@ import Admin from "./component/Admin";
 import Login from "./component/Login";
 import UserAccout from "./component/UserAccout";
 import Register from "./component/Register";
+import Footer from "./component/Footer";
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/useraccout" element={<UserAccout />} />
       </Routes>
+		<Footer />
     </>
   );
 };
