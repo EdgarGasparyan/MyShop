@@ -1,81 +1,111 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "red" }}>
-      <footer className="text-center text-lg-start bg-dark bg-gradient  text-muted">
+    <>
+      <footer className="text-center text-lg-start bg-dark bg-gradient  text-muted align-items-end footer">
         <div className="container p-4">
           <div className="row d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase text-white ">Բաժիններ</h5>
+            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 className="text-uppercase text-pink">Բաժիններ</h5>
               <ul className="list-unstyled mb-0 mt-4">
                 <li>
-                  <a href="#!" className="text-white">
+                  <NavLink
+                    className="text-white nav-link "
+                    aria-current="page"
+                    to="/"
+                  >
                     Գլխավոր
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <NavLink
+                    className="text-white nav-link "
+                    aria-current="page"
+                    to="/about"
+                  >
                     Takdir.am - ի մասին
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase text-white ">Հղումներ</h5>
+            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 className="text-uppercase text-pink ">Հղումներ</h5>
               <ul className="list-unstyled mb-0 mt-4">
                 <li>
-                  <a href="#!" className="text-white">
+                  <NavLink
+                    className="text-white nav-link "
+                    aria-current="page"
+                    to="/connectUs"
+                  >
                     Կապ մեզ հետ
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
+                  <NavLink
+                    className="text-white nav-link"
+                    aria-current="page"
+                    to="/deliveryTerms"
+                  >
                     Առաքման պայմանաններ
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase text-white ">Հետադարձ կապ</h5>
+            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 className="text-uppercase text-pink ">Հետադարձ կապ</h5>
               <ul className="list-unstyled mb-0 mt-4">
                 <li>
-                  <a href="#!" className="text-white">
+                  <p className="text-white mb-0">
                     <i className="fa fa-phone fa-lg"></i> +374 96070445
-                  </a>
+                  </p>
+                  <p className="text-white mb-0">
+                    <i className="fa fa-phone fa-lg"></i> +374 95070445
+                  </p>
                 </li>
                 <li>
-                  <a href="#!" className="text-white">
-                    <i class="fa fa-envelope-o fa-lg"></i> takdir@gmail.com
-                  </a>
+                  <p className="text-white">
+                    <i className="fa fa-envelope-o fa-lg"></i> takdir@gmail.com
+                  </p>
                 </li>
               </ul>
             </div>
 
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase text-white ">
+            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 className="text-uppercase text-pink ">
                 Հետևեք մեզ սոց․ ցանցերում
               </h5>
               <ul className="list-unstyled mb-0 d-flex mt-4">
                 <li>
-                  <a
+					 <NavLink className="" aria-current="page" to="#!">
+                    <button type="button" class="btn btn-outline-light ">
+						  <i className="fa fa-facebook-square fa-lg"></i>
+                    </button >
+                  </NavLink>
+                  {/*<a
                     className="btn btn-outline-light btn-floating m-1"
                     href="#!"
                     role="button"
                   >
-                    <i class="fa fa-facebook-square fa-lg"></i>
-                  </a>
+                    <i className="fa fa-facebook-square fa-lg"></i>
+                  </a>*/}
                 </li>
                 <li>
-                  <a
+                  <NavLink className="" aria-current="page" to="#!">
+                    <button type="button" class="btn btn-outline-light">
+                      <i className="fa fa-instagram fa-lg"></i>
+                    </button>
+                  </NavLink>
+                  {/*<a
                     className="btn btn-outline-light btn-floating m-1"
                     href="#!"
                     role="button"
                   >
                     <i className="fa fa-instagram fa-lg"></i>
-                  </a>
+                  </a>*/}
                 </li>
               </ul>
             </div>
@@ -83,10 +113,13 @@ const Footer = () => {
         </div>
 
         <div className="text-center p-4">
-          <p className="text-white"> © 2021 All rights reserved.:   By Takdir.am</p>
+          <p className="text-white">
+            {" "}
+            © 2021 All rights reserved.: By Takdir.am
+          </p>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 

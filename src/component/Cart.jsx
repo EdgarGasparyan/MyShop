@@ -117,7 +117,7 @@ const Cart = () => {
           </div>
         </div>
       ) : (
-        <EmpatyCart />
+        <EmpatyCart  />
       )}
 
     </>
